@@ -45,7 +45,7 @@ body{
         overflow: hidden;
         position: relative;
         background-color: #F8F5F8;
-           box-shadow: 0 2px 8px rgba(0,0,0,.1);
+          box-shadow: 0 2px 8px rgba(0,0,0,.1);
     }
    
     .personal{
@@ -116,36 +116,45 @@ background-color: #F0EBF1;
 .left-navbar{
   position: relative;
   width: 15%;
-   box-shadow: 0 2px 8px rgba(0,0,0,.1);
   margin-right: 10px;
-
+     box-shadow: 0 2px 8px rgba(0,0,0,.1);
 
 }
 .left_list{
-   position: fixed;
     width: 100%;
+     position: fixed;
+      
 }
 .left_list ul
 {
 
     padding-right: 6px;
-    padding:20px;
+   
     font-size: 30px;
     color: #999;
     text-decoration: none;
+    
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    font-size: 100%;
+    line-height: 1.25em;
 
-
+}
+.left_list h1{
+      font-family: Tahoma,Verdana,Helvetica,sans-serif;
+    line-height: 1.5em;
+    padding-left: 20px;
+    margin-top: 20px; 
 
 
 }
-
 .left_list li a{
     display:block;
-    width: 160px;
-    height: 80px;
-    line-height: 80px;
-    text-align: center;
-    margin-bottom: 20px;
+    line-height: 30px;
+   
     text-decoration: none;
 }
 .left_list li a:hover{
@@ -159,6 +168,7 @@ ul{
   position: relative;
       flex: 1;
   background-color: white;
+ 
 
 }
 .deemo{
