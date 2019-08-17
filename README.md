@@ -1,5 +1,5 @@
 # touhou
-for https://www.patchyvideo.comv
+for https://www.patchyvideo.com
 —— Click on the link below to know ——
 https://github.com/zyddnys/PatchyVideo
 
