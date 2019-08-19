@@ -86,6 +86,7 @@ background-color: #F0EBF1;
 
 }
 #search-bar-query{
+  width: 200px;
  height: 40px;
  padding-left:10px;
  border-radius: 25px;  
