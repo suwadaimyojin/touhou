@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Post Video</title>
+</head>
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="../css/top-navbar.css">
+<link rel="stylesheet" type="text/css" href="../css/Post Video.css">
+<style type="text/css">
+
+
+</style>
+<script type="text/javascript">
+window.onload=function(){
+
+    var tab_right = document.getElementById('tab-button-batch');
+    var tab_left = document.getElementById('tab-button-single');
+    var tagsObj = document.getElementById('tags');
+
+    var video_listObj =document.getElementById('video-list');
+    var form = document.getElementsByClassName('central-form')[0];
+
+    tab_right.onclick=function(){
+    	document.getElementById('tab-batch').style.display = 'block';
+    	document.getElementById('tab-single').style.display = 'none';
+        this.classList.add('active');
+ /*       form.classList.add('active');
+        tagsObj.classList.add('active');
+        video_listObj.classList.add('active');*/
+        tab_left.classList.remove('active');
+
+    }
+     tab_left.onclick=function(){
+    	document.getElementById('tab-batch').style.display = 'none';
+    	document.getElementById('tab-single').style.display = 'block';
+         this.classList.add('active');
+    /*     form.classList.add('active');
+         tagsObj.classList.add('active');
+         video_listObj.classList.add('active');*/
+         tab_right.classList.remove('active');
+
+    }
+
+
+  
+}
+</script>
+<body>
+
+ <div class="top-navbar w "id="top-navbar">
+<div class="nav_left">
+    <ul>
+      <li><a href="">  Home </a></li>
+      <li><a href=""> playlists </a></li>
+      <li><a href="">Post Video</a></li>
+      <li><a href="">Tags</a></li>
+    
+    </ul>
+  </div>
+
+  <div class="nav_right">
+   <ul>
+
+    <li id="s1">
+               <input id="search-bar-query" name="query" type="text" placeholder="Search" value="">
+               <input id='submit' type="submit" value="Search">
+    </li>
+ 
+    <li><a href="https://www.patchyvideo.com/login">Login</a></li>
+    <li><a href="https://www.patchyvideo.com/signup">Sign up</a></li>
+  </ul>
+</div>
+
+
+</div>
+<!-- ______________________________ -->
+
+<div class="w">
+<div class="central-form">
+    <div class="no-whitespace ">
+        <button id="tab-button-single" class="tab-button active" onclick="javascript:gotoTab(&#39;single&#39;);">Single</button>
+        <button id="tab-button-batch" class="tab-button" onclick="javascript:gotoTab(&#39;batch&#39;);">Batch</button>
+    </div>
+
+    <div id="tab-single" class="tab-element" >
+        <div class="video-url-bar central-element width no-whitespace">
+            <input type="text" name="video-url" id="video-url" placeholder="Video URL">
+            <button type="button" id="fetch-video">Fetch Video</button>
+        </div>
+        <img class="central-element width" width="400px" height="250px" id="video-thumbnail">
+        <h3 class="central-element width video-title" id="video-title"></h3>
+        <div class="video-description central-element width" id="video-description">
+        </div>
+    </div>
+    <div id="tab-batch" style="display: none;" class="tab-element">
+        <textarea id="video-list" class="central-element width" placeholder="Videos
+One video on each line" style="height: 300px;"></textarea>
+    </div>
+    <textarea id="tags" class="central-element width" placeholder="Tags
+One tag on each line" style="height: 300px;"></textarea>
+    <p class="central-element width" id="status" style="text-align: center;">Ready</p>
+    <p class="central-element width" id="status2" style="text-align: center; display: none;"><a id="result-link">Click me</a> to see result.</p>
+    <button class="central-element narrow bottom-element" id="post-video-button" value="Post">Post</button>
+</div>
+</div>
+</body>
+</html>
