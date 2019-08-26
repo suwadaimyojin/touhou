@@ -78,6 +78,11 @@ width: 35%;
        top: 0px;
          
 }
+#search-bar-query:focus{
+    font-size: 15px;
+    
+    border: 1px solid #d1d1d1;
+}
 
     
      #submit{  
@@ -93,6 +98,10 @@ width: 35%;
     position: relative;
        top: 0px;
    
+}
+#submit:hover{
+
+      background: #FF88A0;
 }
 .nav_right  li#s1{
     line-height: 0px;

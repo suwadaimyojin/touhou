@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>sign up</title>
+   <link rel="stylesheet" type="text/css" href="../css/top-navbar.css">
+   <link rel="stylesheet" type="text/css" href="../css/common.css">
+   <style>
+
+   .w{
+    display: block;
+}
+input::-webkit-input-placeholder{
+    font-size: 12px;
+
+}
+
+
+body{
+    width: 100%;
+    height:100%;
+  
+  background:none;
+}
+
+.content{
+    width: 1600px;
+    height: 1000px;
+
+ background:  url("../img/imoto.jpg") no-repeat top center ;
+    opacity: 0.9;
+    background-size:cover;
+    background-attachment: fixed;
+
+}
+.font{
+
+}
+.standard{
+   width: 1500px;
+   margin: 10px 50px 0px;
+}
+.topmsg{ 
+
+    font-size: 24px;
+    font-weight: lighter;
+    font-family:  PingFang SC,Arial,Microsoft YaHei,sans-serif;
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+    background-color: white;
+}
+.bigbox{
+    height: 1000px;
+    display: flex;
+    background-color: white;
+    opacity: 0.9;
+}
+.bigbox_left{
+   
+    width: 50%;
+    height: 800px;
+     background:  url("../img/imoto_left.jpg") no-repeat  ;
+     background-size:100% 100%;
+/*     background-color: #D5D5D5; */
+}
+.bigbox_right{
+    padding:50px;
+    padding-top: 150px;
+    width: 50%;
+    margin: auto;
+    height: 800px;
+    
+}
+.desc_name{
+    margin-bottom: 20px;
+}
+
+.bigbox_right .desc {
+width: 100%;
+height:250px;
+
+    font-size: 18px;
+
+  
+
+}
+ .desc_name{
+  color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+.bigbox button{
+width: 100px;
+height:40px;
+    display: inline-block;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #c4c4c4;
+    color: #1f2d3d;
+    margin: 0;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+.text-form{
+    margin-bottom: 20px;
+}
+textarea{
+    width: 100%;
+        height: 100px;
+      padding:10px;
+    font-size: 16px;
+    color: #4a4a4a;
+    border: 1px solid #d1d1d1;
+    border-radius: 2px;
+}
+.psd-form input{
+   
+    width: 300px;
+    height: 30px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    display: block;
+     font-size: 16px;
+    color: #4a4a4a;
+    border: 1px solid #d1d1d1;
+    border-radius: 2px;
+} 
+</style>
+
+
+
+</head>
+
+<body>
+
+
+    <div class="top-navbar w "id="top-navbar">
+        <div class="nav_left">
+            <ul>
+              <li><a href="">  Home </a></li>
+              <li><a href=""> playlists </a></li>
+              <li><a href="other/Postvideo.html">Post Video</a></li>
+              <li><a href="">Tags</a></li>
+
+          </ul>
+      </div>
+
+      <div class="nav_right">
+         <ul>
+
+            <li id="s1">
+             <input id="search-bar-query" name="query" type="text" placeholder="Search" value="">
+             <input id='submit' type="submit" value="Search">
+         </li>
+
+         <li><a href="https://www.patchyvideo.com/login">Login</a></li>
+         <li><a href="https://www.patchyvideo.com/signup">Sign up</a></li>
+     </ul>
+ </div>
+</div>
+<!--     —————————————————————————————————————— -->
+<div class="content w">
+
+
+    <div class="topmsg standard font">
+        管理个人信息
+    </div>
+
+    <div class="bigbox standard">
+
+
+        <div class="bigbox_left"></div>
+
+        <div class="bigbox_right">
+
+            <div class="desc">
+                <div class="desc_name">签名</div>
+
+                <div class="text-form">
+                  <textarea name="" id="" cols="30" rows="10">222</textarea>
+              </div>
+              <button>保存</button>
+          </div>
+
+
+          <div class="psd">
+
+               <div class="desc_name">更改密码</div>
+                <div class="psd-form">
+                 <input type="password" placeholder="Old Password">
+                 <input type="password" placeholder="New Password">
+                 <input type="password" placeholder="Repeat New Password">
+              </div>
+              <button>保存</button>
+         
+          </div>
+
+
+      </div>
+
+
+
+      <!-- bigbox栏结束  -->
+  </div> 
+
+
+</div>
+
+
+</body>
+</html>
