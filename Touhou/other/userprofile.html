@@ -5,6 +5,37 @@
 	<title>sign up</title>
    <link rel="stylesheet" type="text/css" href="../css/top-navbar.css">
    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <script type="text/javascript" src="../js/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="../js/jquery.color.js"></script>
+    <script>
+        var i = 0;
+
+
+        function getcolor(){
+            var str = "#";
+            var random = 0;
+            var aryNum = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F"];
+            for(i = 0; i < 6; i++) {
+                random = parseInt(Math.random() * 16);
+                str += aryNum[random];
+            };
+            return str;
+        }
+
+        $(function () {
+
+            console.log($('h4'));
+            $('h4').click(function () {
+                $(this).stop().animate({
+                    color:getcolor()
+                },500,'swing');
+            });
+            $('.bigbox_left').click(function () {
+                $(this).fadeOut(1000);
+                $(this).siblings().fadeIn(2000);
+            })
+        });
+    </script>
    <style>
 
    .w{
@@ -22,7 +53,12 @@ body{
   
   background:none;
 }
+   h4{
 
+       position: absolute;
+       display:block;
+       width: 200px;
+   }
 .content{
     width: 1600px;
     height: 1000px;
@@ -50,25 +86,30 @@ body{
     background-color: white;
 }
 .bigbox{
-    height: 1000px;
+    height: 1200px;
     display: flex;
     background-color: white;
     opacity: 0.9;
 }
 .bigbox_left{
-   
+    position:absolute;
+
     width: 50%;
-    height: 800px;
+    height: 900px;
      background:  url("../img/imoto_left.jpg") no-repeat  ;
      background-size:100% 100%;
 /*     background-color: #D5D5D5; */
 }
+
 .bigbox_right{
+    position:absolute;
+    right: 0px;
     padding:50px;
     padding-top: 150px;
-    width: 50%;
+
     margin: auto;
-    height: 800px;
+    width: 40%;
+    height: 900px;
     
 }
 .desc_name{
@@ -84,6 +125,7 @@ height:250px;
   
 
 }
+
  .desc_name{
   color: #333;
     font-family: Arial, Helvetica, sans-serif;
@@ -126,6 +168,14 @@ textarea{
     border: 1px solid #d1d1d1;
     border-radius: 2px;
 } 
+       #imoto2{
+           position:absolute;
+           display: none;
+           width: 50%;
+           height: 800px;
+           background:  url("../img/imoto_left2.jpg") no-repeat  ;
+           background-size:100% 100%;
+       }
 </style>
 
 
@@ -164,13 +214,14 @@ textarea{
 
 
     <div class="topmsg standard font">
-        管理个人信息
+       <h4 id="anime">管理个人信息</h4>
     </div>
 
     <div class="bigbox standard">
 
 
         <div class="bigbox_left"></div>
+        <div class="bigbox_left" id="imoto2"></div>
 
         <div class="bigbox_right">
 
