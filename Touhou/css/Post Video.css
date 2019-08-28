@@ -82,3 +82,36 @@ textarea {
     margin: 0em;
     font: 400 13.3333px Arial;
 }
+body{
+
+    background:   url("../img/imoto3.jpg") no-repeat top center;
+
+
+
+}
+
+.central-form{
+    margin-top: 20px;
+    padding: 60px;
+
+}
+.video-url-bar{
+    margin:8px auto;
+}
+.w{
+    height: 100%;
+
+}
+.control{
+    position: relative;
+    height: 60px;
+}
+.control button{
+    background-color:  #FCCAD5;
+    position: relative;
+    margin-left: 20px;
+    left: 3%;
+}.control button:hover{
+    background-color: #FFC9B4;  
+}
+
