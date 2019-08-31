@@ -1,3 +1,6 @@
+
+
+
 .central-form{
 	    width: 600px;
     margin: auto;
@@ -91,7 +94,9 @@ body{
 }
 
 .central-form{
-    margin-top: 20px;
+    margin-top:20px;
+    margin-bottom: 50px;
+    
     padding: 60px;
 
 }
@@ -115,3 +120,10 @@ body{
     background-color: #FFC9B4;  
 }
 
+   .no-whitespace{
+        display: flex;
+        height: 30px;
+    }
+    #fetch-video{
+        white-space: nowrap;
+    }
