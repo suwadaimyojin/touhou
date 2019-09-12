@@ -9,14 +9,13 @@
   }
 
 
- .re_top h2,.new_top h2{
+ .re_top h2{
     word-wrap: break-word;
     word-break: normal;
-    display: inline-block;
+
     font-size: 24px;
-    font-weight: 1px;
-  
-    width: 100%;
+    font-weight: 700;
+      margin: auto;
     text-align: center;
 
   }
@@ -40,7 +39,7 @@
  .re_top,.new_top{
 
   padding-bottom: 10px;
-  border-bottom:3px solid red; 
+  border-bottom:3px solid #CF003E; 
 }
 .new_top
 {
@@ -53,13 +52,16 @@
   text-align: center;
   line-height:100px;
 }
-
+.imgbox{
+  width: 100%;
+  text-align:center;
+}
 .re_video  img{
-  display: block;
+  
   vertical-align:middle;
-  width: 36%;
-  height: 32%;
-  margin: 20px 25%;
+  width: 320px;
+  height: 200px;
+  margin: 30px auto;
 }
 .re_video  p,.new_video li p{
   font-size: 21px;

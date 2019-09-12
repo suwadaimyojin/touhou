@@ -28,16 +28,18 @@
 
     #submit{
 
-    }
+   m  }
 
     .nav_left {
 
 width: 65%;
     }
     .nav_right {
-width: 45%;
+width: 35%;
+
     }
     .nav_left li{
+
         height:70px;
         line-height: 70px;
     	display: inline-block;
@@ -46,14 +48,14 @@ width: 45%;
     text-align: center;
     font-size: 19px;
     
-    
+
     }
     .nav_right li{
-      
+  
       height:70px;
       line-height: 70px;
-     float: left;
-     margin-left: 2%; 
+        
+     margin-left: 5%; 
      display: inline-block;
     font-family: YourWebFontName
     text-align: center;
@@ -61,8 +63,8 @@ width: 45%;
     font-size: 19px;
  
     }
-     .nav_right li:nth-child(3){
-   margin-left: 10%; 
+     .nav_right li a{
+
      }
 
 
@@ -95,8 +97,7 @@ width: 45%;
     outline: none;
     border: none;
     cursor: pointer;
-    position: relative;
-       top: 0px;
+   
    
 }
 #submit:hover{
@@ -110,7 +111,7 @@ width: 45%;
     height: 42px;
     width: 322px;
   position: relative;
-  top: 10px;
+
   right: 50px;
   
 }
