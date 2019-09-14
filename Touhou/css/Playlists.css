@@ -1,0 +1,87 @@
+ .d_t{
+ width:100%;
+
+ }
+ .d_t a{
+  display: block;
+  width: 300px;
+  margin: auto;
+ }
+
+
+.nav_left {
+    width: 50%;
+}
+.nav_right{
+  width:50%;
+}
+.nav_right li#s1{
+  width: 426px;
+  height: 70px;
+    line-height: 70px;
+   
+    position: relative;
+    top: 0px;
+    right: 50px;
+
+}
+.form_select {
+  width: 120px;
+  height: 42px;
+  padding-left: 5px;
+
+  -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: black;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    -webkit-appearance: menulist;
+    box-sizing: border-box;
+    align-items: center;
+    white-space: pre;
+    -webkit-rtl-ordering: logical;
+    background-color: white;
+    cursor: default;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+  outline:none;
+
+    border-style: solid;
+    border-color: white;
+    border-image: initial;
+}
+.d_t{
+  padding:20px 0px;
+}
+ .d_t:hover{
+ background-color: rgba(255,255,255,0.3);
+ }
+.d_t h2{
+
+  text-align: center;
+    word-wrap: break-word;
+    word-break: normal;
+    margin: 10px 0px;
+}
+.d_t  p{
+width: 70%;
+line-height: 25px;
+text-align: center;
+      margin: auto ; 
+}
+#s1{
+  width: 200px;
+}
+.deemo{
+background:  url("../img/5.jpg")  left  no-repeat,
+ url("../img/1.jpg")  right  no-repeat;
+/* url("../img/4.jpg") center  no-repeat,
+             url("../img/2.jpg") right  no-repeat; */
+ background-size: 150px 223px ; 
+}
+ 

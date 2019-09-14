@@ -28,7 +28,7 @@
 
     #submit{
 
-    }
+   m  }
 
     .nav_left {
 
@@ -36,8 +36,10 @@ width: 65%;
     }
     .nav_right {
 width: 35%;
+
     }
     .nav_left li{
+
         height:70px;
         line-height: 70px;
     	display: inline-block;
@@ -49,10 +51,10 @@ width: 35%;
 
     }
     .nav_right li{
-      
+  
       height:70px;
       line-height: 70px;
-     float: left;
+        
      margin-left: 5%; 
      display: inline-block;
     font-family: YourWebFontName
@@ -95,8 +97,7 @@ width: 35%;
     outline: none;
     border: none;
     cursor: pointer;
-    position: relative;
-       top: 0px;
+   
    
 }
 #submit:hover{
@@ -110,7 +111,7 @@ width: 35%;
     height: 42px;
     width: 322px;
   position: relative;
-  top: 10px;
+
   right: 50px;
   
 }
