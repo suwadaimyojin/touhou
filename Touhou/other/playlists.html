@@ -10,12 +10,192 @@
      <link rel="stylesheet" type="text/css" href="../css/videolist.css">
       <link rel="stylesheet" type="text/css" href="../css/component.css">
  <link rel="stylesheet" type="text/css" href="../css/Playlists.css">
+    <link rel="stylesheet" href="../icon/font-awesome-4.7.0/css/font-awesome.min.css">
     
 
      <style type="text/css">
+         <style type="text/css">
+                               body{
+                                   background:none;
+                               }
+         li, .item input{
+             text-decoration: none;
+             outline: none;
+             background: none;
+             border: none;
+             color: #265778;
+         }
+         #addtag{
+             vertical-align: bottom;
+         }
+
+         #btn input{
+
+             height: 50px;
+             background-color: ghostwhite;
+             color: #265778;
+             outline: none;
+             border: 1px solid white;
+             font-size: 20px;
+             position: absolute;
+             left: 40%;
+             top: 50%;
+         }
+         #btn input:hover{
+             background-color: ghostwhite;
+         }
+
+         #tag{
+             width: 1200px;
+             height: 923px;
+             background:url("../img/Patchouli.jpg") no-repeat  ;
+
+             background-size: 1200px 923px;
+             box-shadow:  0px 0px 5px crimson;
+             /*  padding: 50px;*/
+             text-align: center;
+
+             display: none;
+             position: absolute;
+             top: -90px;
+             left: 13%;
+             z-index: 100;
 
 
-</style>
+         }
+         .minibox{
+
+             /*             background-color: rgba(255,255,255,0.5);*/
+             display: none;
+             height: 100%;
+             position: relative;
+             z-index: 0;
+             top:-30px;
+         }
+
+
+         .Taglist{
+             padding-top: 2px;
+             /*        margin-bottom: 20px;*/
+             /*  height: 400px;*/
+             overflow:auto;
+             position: relative;
+         }
+         .Taglist li{
+             background-color: rgba(255,255,255,0.5);
+             display: inline-block;
+             zoom: 1;
+             padding: 12px;
+             margin-left: 10px;
+             text-align: center;
+             vertical-align: middle;  cursor: pointer;
+             list-style: none;
+             border-radius: 50px;
+
+         }
+         .Taglist p, p> input{
+             display: inline-block;
+             font-size:18px;
+             line-height: 20px;
+             margin: 0px 0px 0px 0px!important;
+         }.Taglist i{
+              display: inline-block;
+          }
+         .m_a{
+             color: rgba(255, 255, 255, 0.8);
+         }
+         .m_b{
+             color: rgba(255, 255, 255, 0.8);
+             position: absolute;
+             bottom: 18%;
+             left: 38%;
+         }
+         .m_a div{
+             margin-bottom: 10px;
+         }
+         .tag_title{
+             position: absolute;
+             bottom: 44%;
+             color: white;
+             left: 42%;
+             font-size: 25px;
+             z-index:-1;
+         }
+         /*      .tag_title:nth-child(4){
+                  opacity: 0;
+               }*/
+         #save{
+             position: relative;
+             left: 0px;
+             bottom: -800px;
+             color: white;
+             z-index: 999;
+         }
+         #close{
+
+             position: relative;
+             /*     right: -50px;
+                  bottom: 40px;*/
+             right: -570px;
+             top: 20px;
+             color: white;
+             z-index: 999;
+         }
+
+         #close:hover,#save:hover{
+
+             color: cornflowerblue;
+         }
+
+         #ipt{
+             height: 250px;
+             width: 300px;
+             font-size: 22px;
+             padding-top: 10px;
+             padding-left: 10px;
+             font-weight: bolder;
+             text-rendering: auto;
+             outline: none;
+             border: none;
+             color:  #265778;
+             letter-spacing: normal;
+             word-spacing: normal;
+             text-transform: none;
+             text-indent: 0px;
+             text-shadow: none;
+             display: inline-block;
+             text-align: start;
+
+             background-color: rgba(255, 255, 255, 0.3);
+         }
+
+         .minibox:before{
+             content: "";
+             position: absolute;
+             width: 100%;
+             height: 41%;
+             top: 57%;
+             left: 0%;
+             background: url("../img/Patchouli.jpg") no-repeat;
+             background-size: 1200px 923px;
+             filter: blur(98px);
+             z-index: -2;
+         }
+         .m_bg:before{
+             content: "";
+             position: absolute;
+             width: 100%;
+             height: 40%;
+             top: 0%;
+             left: 0%;
+             background: url("../img/Patchouli.jpg") no-repeat;
+             background-size: 1200px 923px;
+             filter: blur(100px);
+             z-index: -2;
+         }
+
+     </style>
+
 
 </head>
 <body>  
@@ -82,6 +262,65 @@
 
   <a href=""><img src="../img/8c2211d49aa0e82038a27b2904a44034966a93c29a6d7ae2.png" alt=""title=""></a>
 <p>♫ Welcome back everyone! Touhou 17 has come out and it's great so far.</p>
+
+                  <div id="tag" >
+                      <i class="fa fa-close fa-2x"  id="close" ></i>
+                      <i class="fa fa-circle-o fa-3x"  id="save" ></i>
+                      <div class="minibox">
+
+
+
+                          <div class="m_bg">
+
+                          </div>
+                          <div class="m_a">
+                              <ul class="Taglist Copyright">
+
+                              </ul>
+                              <ul class="Taglist Language">
+
+                              </ul>
+                              <ul class="Taglist Character">
+
+                              </ul>
+                              <ul class="Taglist Author">
+
+                              </ul>
+                              <ul class="Taglist General">
+
+                              </ul>
+                              <ul class="Taglist Meta">
+
+                              </ul>
+
+
+                          </div>
+
+                          <div class="m_b">
+
+                              <div>
+
+                                  <textarea id="ipt"></textarea>
+                                  <!--<input class="fa fa-plus-square" type="button"value="add">-->
+                                  <span id="addtag" > <i class="fa fa-plus-square fa-2x" ></i></span>
+
+                              </div>
+
+
+                          </div>
+                      </div>
+                      <span class="tag_title">Edit Common Tags</span>
+                      <span class="tag_title">你输入的tag已存在或非法</span>
+                      <span class="tag_title">请输入合法的Tag</span>
+
+
+
+                      <!--         <i class="fa fa-check fa-3x"  id="close" ></i>-->
+
+
+
+                  </div>
+                  <a href="#" id="edit_tags">Edit Common Tags</a>
 
 
 
@@ -170,4 +409,153 @@
 
 
 </body>
+<script src="../js/jquery-3.4.1.js"></script>
+<script>
+
+    $(function () {
+        var input = $("<input>");
+        $('.tag_title:last').stop().animate({opacity:0});
+        $('.tag_title:eq(1)').stop().animate({opacity:0});
+        function getAjaxValue(str){
+            var s = 0 ;
+            $.ajax({
+                type: "POST",
+                url: "https://www.patchyvideo.com/tags/query_tag_categories.do ",
+                async:false,
+                contentType: 'application/json',
+                data:JSON.stringify({"tags":str.split(/[\s,]/)}),
+                success: function (result) {
+                    s = result.data.categorie_map;
+                    console.log(s);
+                },
+
+            });
+            return s ;
+        };
+        function ifval(){
+            let v = getAjaxValue(input.val());
+            if(JSON.stringify(v)!='{}'){
+                input.parent().html(input.val());
+            }
+
+            if(input.val() ==''){
+                if($("input").parents('.item').siblings('.item').length==0){
+                    input.parent().parent().parent().children().remove();
+                }
+                else {
+                    input.parent().parent().remove();
+                }
+            }
+        }
+        $('html').on('dblclick',function () {
+
+            ifval();
+        })
+        $('#edit_tags').on('click',function () {
+            $('#tag').stop().fadeIn('slow').animate({
+            },function () {
+                $('.minibox').fadeIn('slow');
+
+            });
+
+        });
+        $('#ipt').mouseenter(function () {
+            $('.tag_title').stop().animate({opacity:0});
+        })
+        $('.m_b').on('click','#addtag',function (event) {
+            let v = getAjaxValue($('#ipt').val());
+
+            for(var i in v){
+                if(getAjaxValue($('#ipt').val()).length!=0  &&  $(`.${v[i]}`).children('div').length==0 ){ //当第一次创建分类区域，
+                    console.log("分支1：");
+                    /*
+                                    $('.m_a').append($('<ul class="Taglist">').addClass(`${v[i]}`).append(`<div>${v[i]}：</div><li class="item"><p class="val_${i}">${i}</p><i class="fa fa-close"></i></li>`));
+                    */
+                    $(`.${v[i]}`).append(`<div>${v[i]}：</div><li class="item"><p class="val_${i}">${i}</p><i class="fa fa-close"></i></li>`);
+                    $('#ipt').val('');
+                }
+
+                else if( $(`.${v[i]}`).find(`.val_${i}`).length==0 && $(`.${v[i]}`).length!=0 ){ //当分类区域已创建，tag不存在时
+                    console.log("分支2：");
+                    $(`.${v[i]}`).append(`<li class="item"><p class="val_${i}">${i}</p><i class="fa fa-close"></i></li>`);
+                    $('#ipt').val('');
+                }
+                else {
+                    $('.tag_title:eq(1)').stop().animate({opacity:1},1000,function () {
+                        $(this).animate({opacity:0},3000)
+                    });
+                    console.log("分支3");
+                }
+
+            }
+
+            if( JSON.stringify(v)=='{}'){
+
+                $('.tag_title:last').stop().animate({opacity:1},1000,function () {
+                    $(this).animate({opacity:0},3000)
+                });
+
+                console.log("分支4");
+            }
+            $('.tag_title:first').fadeOut(1000);
+
+            console.log("结束：");
+            event.stopPropagation();
+        });
+
+        $('.minibox').on('click','.fa',function () {
+            let ulobj =$(this).parents('ul');
+            let itemlength =$(this).parents('.item').siblings('.item').length;
+
+
+            if(itemlength==0){
+                ulobj.children().remove();
+            } else {
+                $($(this)[0].parentNode).remove();
+            }
+
+        })
+        /*$('.fa').on('click',function () {
+
+        });*/
+
+        $('.m_a').on('click ','p',function () {
+            var li = $(this);
+            var text = $(this).text();
+            li.html("");
+            input.attr("value",text);
+            input.keyup(function(event){
+                var myEvent = event || window.event;
+                var kcode = myEvent.keyCode;
+                if(kcode == 13){
+                    ifval();
+                }
+            });
+            li.append(input);
+            //让文本框里边的文章被高亮选中将jquery的对象转换成dom对象
+            var inpuliom = input.get(0);
+            inpuliom.select();
+        });
+
+
+
+        $('#tag').on('click','#close',function () {
+            $('.minibox').hide();
+            $('#tag').animate({
+
+            },function () {
+                $(this).fadeOut('linear')
+            })
+        });
+
+
+
+
+
+
+
+
+    })
+
+</script>
 </html>
